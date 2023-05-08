@@ -3,7 +3,7 @@
 namespace DaddaAbdelghafour\CMI;
 
 use Exception;
-use Mehdirochdi\CMI\Exception\InvalidArgumentException;
+use DaddaAbdelghafour\CMI\Exception\InvalidArgumentException;
 
 class BaseCmiClient implements CmiClientInterface
 {

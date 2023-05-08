@@ -89,7 +89,7 @@ Branch : `MasterCard`, PAN: `5191630100004896`, Authentication code: `123` Expir
 ```php title="example/process.php"
 <?php
 // REQUIRED PARAMS
-$client = new Mehdirochdi\CMI\CmiClient([
+$client = new DaddaAbdelghafour\CMI\CmiClient([
     ...
     'AutoRedirect' => 'true',
 ]);
