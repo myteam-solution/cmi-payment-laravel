@@ -1,0 +1,51 @@
+{
+    "name": "abdolghafour/cmi-payment-laravel",
+    "description": "PHP package to communicate with the CMI payment plateform in Morocco",
+    "keywords": [
+        "cmi",
+        "cmi online payment",
+        "payment processing",
+        "morocco payment",
+        "cmi payment",
+        "payment in morocco",
+        "paiement en ligne cmi",
+        "cmi paiement en ligne",
+        "paiement en ligne maroc",
+        "cmi paiement php",
+        "cmi payment php",
+        "paiement au maroc"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dadda abdelfgadour",
+            "email": "dadda.abdelghafour2000@gmail.com",
+            "homepage": "https://github.com/abdolghafour"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.10",
+        "friendsofphp/php-cs-fixer": "^3.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mehdirochdi\\CMI\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CMI\\": [
+                "tests/"
+            ]
+        }
+    },
+    "scripts": {
+        "test" : "vendor/bin/phpunit"
+    }
+}
