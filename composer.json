@@ -1,5 +1,5 @@
 {
-    "name": "MyTeamSolution/cmi-payment-laravel",
+    "name": "myteam-solution/cmi-payment-laravel",
     "description": "PHP package to communicate with the CMI payment plateform in Morocco",
     "keywords": [
         "cmi",
@@ -24,7 +24,7 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^8.4",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*"

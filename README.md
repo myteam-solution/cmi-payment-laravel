@@ -19,7 +19,7 @@ cmi-php requires the following components to work correctly
 
 You can install the bindings via [composer](https://getcomposer.org/). Run the following command:
 ```shell
-composer require MyTeamSolution/cmi-payment-laravel
+composer require myteam-solution/cmi-payment-laravel
 ```
 To use the bindings, use Composer's [autoload](https://getcomposer.org/doc/01-basic-usage.md#autoloading)
 ```shell
