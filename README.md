@@ -10,7 +10,7 @@ NB: The small library follows the FIG standard **PSR-4** .
 
 cmi-php requires the following components to work correctly
 
-- PHP>=8.4
+- PHP>=8
 - [cUrl](https://www.php.net/manual/en/book.curl.php) Extension
 - [mbstring](https://www.php.net/manual/en/book.mbstring.php) Extension
 
