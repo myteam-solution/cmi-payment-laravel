@@ -1,6 +1,6 @@
 <?php
 
-namespace DaddaAbdelghafour\CMI;
+namespace MyTeamSolution\CMI;
 
 /**
  * Interface for a CMI client.

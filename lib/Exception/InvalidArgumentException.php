@@ -1,6 +1,6 @@
 <?php
 
-namespace DaddaAbdelghafour\CMI\Exception;
+namespace MyTeamSolution\CMI\Exception;
 
 class InvalidArgumentException extends \InvalidArgumentException implements ExceptionInterface
 {

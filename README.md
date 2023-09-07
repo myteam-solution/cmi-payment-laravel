@@ -10,7 +10,7 @@ NB: The small library follows the FIG standard **PSR-4** .
 
 cmi-php requires the following components to work correctly
 
-- PHP>=7.3
+- PHP>=8.4
 - [cUrl](https://www.php.net/manual/en/book.curl.php) Extension
 - [mbstring](https://www.php.net/manual/en/book.mbstring.php) Extension
 
@@ -19,7 +19,7 @@ cmi-php requires the following components to work correctly
 
 You can install the bindings via [composer](https://getcomposer.org/). Run the following command:
 ```shell
-composer require abdolghafour/cmi-payment-laravel
+composer require MyTeamSolution/cmi-payment-laravel
 ```
 To use the bindings, use Composer's [autoload](https://getcomposer.org/doc/01-basic-usage.md#autoloading)
 ```shell
@@ -51,7 +51,7 @@ Keeping mind that `storekey` and `clientid` are given by CMI, you should contact
 ```php title="example/process.php"
 <?php
 // REQUIRED PARAMS
-$client = new DaddaAbdelghafour\CMI\CmiClient([
+$client = new MyTeamSolution\CMI\CmiClient([
     'storekey' => '', // STOREKEY
     'clientid' => '', // CLIENTID
     'oid' => '135ABC', // COMMAND ID IT MUST BE UNIQUE
@@ -89,7 +89,7 @@ Branch : `MasterCard`, PAN: `5191630100004896`, Authentication code: `123` Expir
 ```php title="example/process.php"
 <?php
 // REQUIRED PARAMS
-$client = new DaddaAbdelghafour\CMI\CmiClient([
+$client = new MyTeamSolution\CMI\CmiClient([
     ...
     'AutoRedirect' => 'true',
 ]);

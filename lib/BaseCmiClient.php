@@ -1,9 +1,9 @@
 <?php
 
-namespace DaddaAbdelghafour\CMI;
+namespace MyTeamSolution\CMI;
 
 use Exception;
-use DaddaAbdelghafour\CMI\Exception\InvalidArgumentException;
+use MyTeamSolution\CMI\Exception\InvalidArgumentException;
 
 class BaseCmiClient implements CmiClientInterface
 {

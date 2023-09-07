@@ -4,7 +4,7 @@
 require '../vendor/autoload.php'; // AUTOLOAD FROM COMPOSER
 
 $base_url="http://cmi-php.local/example";
-$client = new DaddaAbdelghafour\CMI\CmiClient([
+$client = new MyTeamSolution\CMI\CmiClient([
     'storekey' => '', // STOREKEY
     'clientid' => '', // CLIENTID
     'oid' => '137ABC', // COMMAND ID IT MUST BE UNIQUE

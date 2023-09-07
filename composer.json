@@ -1,5 +1,5 @@
 {
-    "name": "abdolghafour/cmi-payment-laravel",
+    "name": "MyTeamSolution/cmi-payment-laravel",
     "description": "PHP package to communicate with the CMI payment plateform in Morocco",
     "keywords": [
         "cmi",
@@ -18,13 +18,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "dadda abdelfgadour",
-            "email": "dadda.abdelghafour2000@gmail.com",
-            "homepage": "https://github.com/abdolghafour"
+            "name": "myteam solution",
+            "email": "contact@myteam.ma",
+            "homepage": "https://github.com/MyTeamSolution"
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^8.4",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*"
@@ -35,7 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DaddaAbdelghafour\\CMI\\": "lib/"
+            "MyTeamSolution\\CMI\\": "lib/"
         }
     },
     "autoload-dev": {
