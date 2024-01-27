@@ -19,7 +19,7 @@ cmi-php requires the following components to work correctly
 
 You can install the bindings via [composer](https://getcomposer.org/). Run the following command:
 ```shell
-composer require myteam-solution/cmi-payment-laravel
+composer require soluzi/cmi-payment-laravel
 ```
 To use the bindings, use Composer's [autoload](https://getcomposer.org/doc/01-basic-usage.md#autoloading)
 ```shell
@@ -51,17 +51,17 @@ Keeping mind that `storekey` and `clientid` are given by CMI, you should contact
 ```php title="example/process.php"
 <?php
 // REQUIRED PARAMS
-$client = new MyTeamSolution\CMI\CmiClient([
+$client = new Soluzi\CMI\CmiClient([
     'storekey' => '', // STOREKEY
     'clientid' => '', // CLIENTID
-    'oid' => '135ABC', // COMMAND ID IT MUST BE UNIQUE
+    'oid' => 'GENERATE_UNIQUE_ID', // COMMAND ID IT MUST BE UNIQUE
     'shopurl' => 'YOUR_DOMAIN_HERE', // SHOP URL FOR REDIRECTION
     'okUrl' => 'YOUR_DOMAIN_HERE/okFail.php', // REDIRECTION AFTER SUCCEFFUL PAYMENT
     'failUrl' => 'YOUR_DOMAIN_HERE/okFail.php', // REDIRECTION AFTER FAILED PAYMENT
-    'email' => 'dadda.abdelghafour2000@gmail.com', // YOUR EMAIL APPEAR IN CMI PLATEFORM
-    'BillToName' => 'dadda abdelfgadour', // YOUR NAME APPEAR IN CMI PLATEFORM
-    'BillToCompany' => 'company name', // YOUR COMPANY NAME APPEAR IN CMI PLATEFORM
-    'amount' => $_POST['amount'], // RETRIEVE AMOUNT WITH METHOD POST
+    'email' => $request['email'], // YOUR EMAIL APPEAR IN CMI PLATEFORM
+    'BillToName' => $request['name'], // YOUR NAME APPEAR IN CMI PLATEFORM
+    'BillToCompany' => $request['company'], // YOUR COMPANY NAME APPEAR IN CMI PLATEFORM
+    'amount' => $request['amount'], // RETRIEVE AMOUNT WITH METHOD POST
     'CallbackURL' => 'YOUR_DOMAIN_HERE/callback.php', // CALLBACK
 ]);
 
@@ -89,11 +89,16 @@ Branch : `MasterCard`, PAN: `5191630100004896`, Authentication code: `123` Expir
 ```php title="example/process.php"
 <?php
 // REQUIRED PARAMS
-$client = new MyTeamSolution\CMI\CmiClient([
+$client = new Soluzi\CMI\CmiClient([
     ...
     'AutoRedirect' => 'true',
 ]);
+$client->redirect_post(); // CREATE INPUTS HIDDEN, GENERATE A VALID HASH AND MAKE REDIRECT POST TO CMI
 OR
+// REQUIRED PARAMS
+$client = new Soluzi\CMI\CmiClient([
+    ...
+]);
 $client->AutoRedirect = 'true'; // REDIRECT THE CUSTOMER AUTOMATICALY BACK TO THE MERCHANT's WEB SITE WHEN TRANSACION IS ACCEPTED
 $client->redirect_post(); // CREATE INPUTS HIDDEN, GENERATE A VALID HASH AND MAKE REDIRECT POST TO CMI
 ```

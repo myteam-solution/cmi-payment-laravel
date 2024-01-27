@@ -8,7 +8,7 @@ require_once('./lib/CmiClient.php');
 $_POST['storekey'] = '';
 $hash = $_POST['HASH'];
 
-$client = new MyTeamSolution\CMI\CmiClient($_POST);
+$client = new Soluzi\CMI\CmiClient($_POST);
 
 $status = $client->hash_eq($_POST['HASH']);
 if($status) {

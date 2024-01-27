@@ -1,5 +1,5 @@
 {
-    "name": "myteam-solution/cmi-payment-laravel",
+    "name": "soluzi/cmi-payment-laravel",
     "description": "PHP package to communicate with the CMI payment plateform in Morocco",
     "keywords": [
         "cmi",
@@ -18,9 +18,9 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "myteam solution",
-            "email": "contact@myteam.ma",
-            "homepage": "https://github.com/MyTeamSolution"
+            "name": "soluzi",
+            "email": "contact@soluzi.ma",
+            "homepage": "https://github.com/soluzi"
         }
     ],
     "require": {
@@ -35,7 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MyTeamSolution\\CMI\\": "lib/"
+            "Soluzi\\CMI\\": "lib/"
         }
     },
     "autoload-dev": {

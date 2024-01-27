@@ -1,6 +1,6 @@
 <?php
 
-namespace MyTeamSolution\CMI;
+namespace Soluzi\CMI;
 
 class CmiClient extends BaseCmiClient
 {

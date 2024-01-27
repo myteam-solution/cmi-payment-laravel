@@ -1,6 +1,6 @@
 <?php
 
-namespace MyTeamSolution\CMI;
+namespace Soluzi\CMI;
 
 /**
  * Interface for a CMI client.
@@ -12,6 +12,4 @@ interface CmiClientInterface
     public function getRequireOpts();
 
     public function generateHash($storeKey);
-
-    public function dd(...$values);
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace MyTeamSolution\CMI\Exception;
+namespace Soluzi\CMI\Exception;
 
 if (\interface_exists(\Throwable::class, false)) {
     /**

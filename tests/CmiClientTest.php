@@ -2,8 +2,8 @@
 declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
-use MyTeamSolution\CMI\CmiClient;
-use MyTeamSolution\CMI\Exception\InvalidArgumentException;
+use Soluzi\CMI\CmiClient;
+use Soluzi\CMI\Exception\InvalidArgumentException;
 
 final class CmiClientTest extends TestCase
 {
@@ -34,7 +34,7 @@ final class CmiClientTest extends TestCase
     public function test_if_hash_is_validated()
     {
         $base_url="http://cmi-php.local/example";
-        $client = new MyTeamSolution\CMI\CmiClient([
+        $client = new Soluzi\CMI\CmiClient([
             'storekey' => '987456', // STOREKEY
             'clientid' => '1234567', // CLIENTID
             'oid' => '137ABC', // COMMAND ID IT MUST BE UNIQUE
